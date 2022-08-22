@@ -1,0 +1,51 @@
+div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container1{
+    width: 1200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.s1, .s2, .s3{
+    width: 200px;
+    background-color: yellow;
+}
+
+
+.container2{
+    background-color: purple;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+
+.seccion1, .seccion2, .seccion3{
+    background-color: white;
+    /* para que tengan el mismo tamaño */
+    flex: 1;
+    /* va a dividir las 3 secciones en 3 partes exactamente iguales, cada una va a tener 1/3 */
+}
+
+.seccion2{
+    flex: 2;
+}
+
+.seccion3{
+    flex: 3;
+}
+
+/* 
+seccion1 = 1 -> 1/6
+seccion2 = 2 -> 2/6
+seccion3 = 3 -> 3/6
+
+Total espacios = 6
+*/
