@@ -13,14 +13,18 @@
 <body>
     <div class="card">
         <div class="card-header">
-            <img class="imagen-usuario" src="images/user-circle.png" alt="imagen de usuario">
+            <img class="imagen-usuario" src="images/user-circle.png" alt="imagen de usuario"
+                ondblclick="dobleclic_avatar()">
         </div>
         <div class="card-body">
-            <h2>Jane Doe</h2>
+            <h2 onmouseover="over()" onmouseout="out()">Jane Doe</h2>
             <h4><img class="icon" src="images/map-marker.png" alt="icono de marcador de ubicación">Seattle</h4>
             <p>Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
-            <a href="#"><img class="icon" src="images/gear.png" alt="icono de configuración">edit profile</a>
+            <a href="#" onclick="clic_editar()"><img class="icon" src="images/gear.png" alt="icono de configuración">edit profile</a>
         </div>
     </div>
+
+    <!-- agregar script -->
+    <script src="js/script.js"></script>
 </body>
 </html>
